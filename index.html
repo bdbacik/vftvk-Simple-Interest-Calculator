@@ -1,16 +1,65 @@
+<!DOCTYPE html>
 <html>
     <head>
+    <title>Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
+        <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
+        <!--Amount form field-->
+        <label for="principal">Amount</label>
+        <input type="number" oninput="return checkinput()" id="principal" name="principal">
+        <br/><br/>
+
+        <!--Rate form field-->
+        <label for="rate">Rate</label>
+        <input type="range" id="rate" min="1" max="20" value="10.25" onchange="updateRate()">
+        <!--span to show selected value in range-->
+        <span id="rate_val">
+        10.25%
+        </span>
+        <br/><br/>
+
+        <!--Years form field-->
+        <label for="years">No. of Years</label>
+        <select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>   
+        </select>
+        <br/><br/>
+
+        <!--old code
         Amount <input type="number"  id="principal">  <br/>
         Rate <input type="number"  id="rate">  <br/>
         No. of Years <input type="number"  id="years">  <br/>
         Interest : <span id="result"></span><br>
+        -->
 
-        <button onclick="compute()">Compute</button>
+        <button onclick="compute()">Compute Interest</button>
+        <br/>
+        <!--span to show results below compute button-->
+        <span id="result">
+
+        </span>    
+        
+        <!--footer-->
+        <footer>
+
+        &#169; This Calculator belongs to Brian Bacik
+
+        </footer>
+        </div>
     </body>
 </html>
