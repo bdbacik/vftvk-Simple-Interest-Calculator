@@ -4,7 +4,7 @@ h1{color:grey;font-family:verdana}
 .maindiv {
     background-color:white;
     color:black;
-    width:300px;
+    width:400px;
     padding:20px;
     border-radius:25px;
     align:center
@@ -14,7 +14,7 @@ label{
     display: inline-block;
     float: left;
     clear: left;
-    width: 100px;
+    width: 150px;
     text-align: left;
 }
 input {
