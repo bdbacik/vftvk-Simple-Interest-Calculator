@@ -9,6 +9,7 @@
     <body>
         <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
+        <p>
 
         <!--Amount form field-->
         <label for="principal">Amount</label>
@@ -40,27 +41,13 @@
         </select>
         <br/><br/>
 
-        <!--old code
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-        -->
+        <button onclick="compute()">Compute Interest</button><br/>
 
-        <button onclick="compute()">Compute Interest</button>
-        <br/>
         <!--span to show results below compute button-->
-        <span id="result">
-
-        </span><br/>    
-        
+        <span id="result"></span><br/>    
+        </p>
         <!--footer-->
-        <footer>
-
-
-        &#169; This Calculator belongs to Brian Bacik
-
-        </footer>
+        <footer>&#169; This Calculator belongs to Brian Bacik</footer>
         </div>
     </body>
 </html>
